@@ -10,10 +10,11 @@ Open terminal
 type `'irb'` to begin
 
 ### Classes
-
+```
 require "./MyGraph.rb"
 require "./MyVertex.rb"
 require "./MyEdge.rb"
+```
 
 ### Create instance of MyGraph
 
