@@ -22,15 +22,15 @@ class MyGraph
 #-----function to create a new edge-----#
   def new_edge(v, w, label, value)
     @newedge=MyEdge.new(v, w, label, value)
-      puts "Edge #{newedge.label} with value #{newedge.value} with:"
+      puts "Edge #{newedge.label} added!"
       self.Edges_Array.push(newedge)
       self.Vertices_Array.each do |vertex|
         if (v==vertex.label)
-          puts "Vertex 1: #{vertex.label} value: #{vertex.value} "
+          puts "  Vertex 1: #{vertex.label} value: #{vertex.value} "
           vertex.degree = vertex.degree+1
         end
         if (w==vertex.label)
-          puts "Vertex 2: #{vertex.label} value: #{vertex.value} "
+          puts "  Vertex 2: #{vertex.label} value: #{vertex.value} "
           vertex.degree = vertex.degree+1
         end
       end

@@ -1,11 +1,11 @@
 class MyEdge
 
-attr_accessor :label, :value, :v, :w
+attr_accessor :v, :w, :label, :value
 
-  def initialize label, value, v, w
-    @label = label
-    @value = value
+  def initialize v, w, label, value
     @v = v
     @w = w
+    @label = label
+    @value = value    
   end
 end
